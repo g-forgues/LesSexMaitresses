@@ -19,4 +19,3 @@
 - Style Collaborations page
 - Add Services page content
 - Style Services page
-- Figure out github Pages deployment 
