@@ -1,7 +1,7 @@
 import {Title} from "@mantine/core";
 import {useLoaderData} from "react-router-dom";
 import EpisodeItem from "../components/EpisodeItem/EpisodeItem.tsx";
-import parseRss from "../util/RssParser.tsx";
+import parseRss from "../util/RssParser.ts";
 
 function EpisodesPage() {
 
