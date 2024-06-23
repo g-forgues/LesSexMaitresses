@@ -1,12 +1,12 @@
 {
-  "name": "LesSexMaitresses",
+  "name": "Les SexMaitresses",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.3",
   "type": "module",
   "homepage": "https://g-forgues.github.io/LesSexMaitresses",
   "scripts": {
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
@@ -15,6 +15,7 @@
   "dependencies": {
     "@mantine/core": "^7.10.1",
     "@mantine/hooks": "^7.10.1",
+    "@tabler/icons-react": "^3.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1"
