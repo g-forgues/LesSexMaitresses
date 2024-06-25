@@ -51,3 +51,7 @@ link.active {
     background-color: var(--mantine-color-header-1);
     color: var(--mantine-color-header-6);
 }
+
+.mantine-Drawer-Root {
+    background-color: var(--mantine-color-header-5);
+}
