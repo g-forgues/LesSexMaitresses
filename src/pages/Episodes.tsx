@@ -1,4 +1,4 @@
-import {Title} from "@mantine/core";
+import {Accordion, Container, Title} from "@mantine/core";
 import {useLoaderData} from "react-router-dom";
 import EpisodeItem from "../components/EpisodeItem/EpisodeItem.tsx";
 import parseRss from "../util/RssParser.ts";
@@ -10,10 +10,16 @@ function EpisodesPage() {
 
     return (
         <>
-            <Title>Episodes</Title>
-            {episodes.map((episode) => (
-                <EpisodeItem key={episode.title} episode={episode}/>
-            ))}
+            <Container>
+                <Title>Episodes</Title>
+                <Accordion variant="separated" defaultValue={episodes[0].title}>
+                    {episodes.map((episode) => (
+                        <EpisodeItem key={episode.title} episode={episode}/>
+                    ))}
+                </Accordion>
+
+            </Container>
+
         </>
     );
 }

@@ -1,5 +1,5 @@
 import {createHashRouter, RouteObject} from "react-router-dom";
-import MainLayout from "./MainLayout.tsx";
+import MainLayout from "../layout/MainLayout.tsx";
 import {MainBody} from "../components/MainBody/MainBody.tsx";
 import ErrorPage from "./Error.tsx";
 import AboutPage from "./About.tsx";

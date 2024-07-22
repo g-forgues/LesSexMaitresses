@@ -15,7 +15,7 @@ export function Header() {
                 to={link.link}
                 key={link.label}
                 className={classes.link}
-                onClick={toggle}
+                onClick={opened ? toggle : undefined}
             >
                 {link.label}
             </NavLink>
@@ -26,13 +26,13 @@ export function Header() {
         <header className={classes.header}>
             <Container fluid className={classes.inner}>
                 <Container fluid className={classes.left}>
-                    <Link to="/" className={classes.titleLogo}>Les SexMaitresses</Link>
+                    <Link to="/" className={classes.titleLogo} >Les SexMaitresses</Link>
 
                 </Container>
-                <Group gap={30} visibleFrom="xs">
+                <Group gap={30} visibleFrom="sm">
                     {linksComponent}
                 </Group>
-                <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm"/>
+                <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="md"/>
                 <Drawer
                     position="right"
                     offset={9}

@@ -24,9 +24,14 @@
     font-weight: 500;
     font-style: normal;
     font-size: rem(40px);
+    white-space: nowrap;
+    overflow: hidden;
     color: var(--mantine-color-header-1);
     text-decoration: none;
 }
+
+
+
 
 
 .link {

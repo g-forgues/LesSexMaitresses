@@ -2,6 +2,8 @@ import '@mantine/core/styles.css';
 import {MantineProvider, createTheme, MantineColorsTuple} from '@mantine/core';
 import {RouterProvider} from "react-router-dom";
 import router from "./pages/Router.tsx";
+import {Provider} from "react-redux";
+import {store} from "./store";
 
 function App() {
 
@@ -29,7 +31,9 @@ function App() {
 
     return (
         <MantineProvider theme={theme}>
+            <Provider store={store}>
             <RouterProvider router={router} />
+            </Provider>
         </MantineProvider>
 
     )
