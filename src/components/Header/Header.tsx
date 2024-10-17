@@ -1,8 +1,9 @@
-import {Burger, Container, Drawer, Group} from '@mantine/core';
+import {Burger, Container, Drawer, Group, Image} from '@mantine/core';
 import {useDisclosure} from '@mantine/hooks';
 import classes from './Header.module.css';
 import {Link, NavLink} from "react-router-dom";
 import {links} from "../../pages/Router.tsx";
+import image from '../../assets/header.png';
 
 
 
@@ -24,9 +25,11 @@ export function Header() {
 
     return (
         <header className={classes.header}>
-            <Container fluid className={classes.inner}>
-                <Container fluid className={classes.left}>
-                    <Link to="/" className={classes.titleLogo} >Les SexMaitresses</Link>
+            <Container fluid  className={classes.inner}>
+                <Container  className={classes.left}>
+                    <Link to="/" className={classes.titleLogo} >     
+                     <Image src={image} className={classes.image} />
+                    </Link>
 
                 </Container>
                 <Group gap={30} visibleFrom="sm">

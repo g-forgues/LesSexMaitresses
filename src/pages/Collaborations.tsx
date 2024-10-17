@@ -1,9 +1,12 @@
-import {Title} from "@mantine/core";
+import AboutItem from "../components/AboutItem/AboutItem.tsx";
+import collabosData from '../data/collabos.json';
 
 function CollaborationsPage() {
     return (
         <>
-            <Title>Collaborations</Title>
+            {collabosData.map((collabo, index) => (
+                <AboutItem key={collabo.name} about={collabo} imageOnRight={index % 2 === 1}/>
+            ))}
         </>
     );
 

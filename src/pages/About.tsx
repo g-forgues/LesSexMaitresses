@@ -5,7 +5,7 @@ function AboutPage() {
     return (
         <>
             {aboutData.map((about, index) => (
-                <AboutItem key={about.name} about={about} imageOnRight={index % 2 === 1}/>
+                <AboutItem key={about.name} about={about} showName imageOnRight={index % 2 === 1}/>
             ))}
         </>
     );

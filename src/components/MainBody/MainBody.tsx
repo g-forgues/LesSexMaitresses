@@ -1,28 +1,72 @@
-import {Container, Image, SimpleGrid, Text, Title} from '@mantine/core';
-import image from '../../assets/logo-big.png';
+import { Container, Title, Text, List } from '@mantine/core';
+import { Link } from "react-router-dom";
 import classes from './MainBody.module.css';
 
 export function MainBody() {
 
     return (
         <Container my="md">
-            <SimpleGrid cols={{base: 1, sm: 2}} spacing="xl">
-                <div style={{width:'100%'}}>
-                    <Image src={image} className={classes.image}/>
-                </div>
-                <div>
-                    <Title className={classes.title}>
-                        Les SexMaitresses
-                    </Title>
-                    <Text c="dimmed" mt="md">
-                        Salut! Vous écoutez les SexMaitresses, Audrey, Sarah et Valérie, diplômées de la maîtrise en
-                        sexologie et féministes du plus profond de notre âme. Que vous soyez calé(e)s ou novices en la
-                        matière, on vous parle de sujets sexo, de sujets féministes parsemés d’anecdotes cocasses. De
-                        notre salon, on vous invite à nos conversations pour rire, rager… et peut-être en apprendre un
-                        peu. Bonne écoute!
-                    </Text>
-                </div>
-            </SimpleGrid>
+                            <Title className={classes.title}>
+                    Choses à faire
+                </Title>
+            <div className={classes.inner}>
+
+                <Text c="dimmed" mt="md">                                    
+                    <List
+                        mt={10}
+                        spacing="sm"
+                        size="md"                        
+                    > <List.Item>
+                            <b>Travailler</b>   
+                            </List.Item>
+                         <List.Item>
+                            <b>En tête</b>                          
+                            <List spacing="sm" size="md" mt={10}>
+                                <List.Item>
+                                   Remplacer logo.
+                                </List.Item>
+                                <List.Item>
+                                   Refaire l'alignement maintant que j'sais plus c'que je fais.
+                                </List.Item>
+                                <List.Item>
+                                   Highlight page courante.
+                                </List.Item>
+                            </List>
+                        </List.Item>
+                        <List.Item>
+                            <b>Page d'accueil </b> – <Link to="/test"> Nouvelle version </Link>
+                            <List spacing="sm" size="md" mt={10}>
+                                <List.Item>
+                                   Texte moins sur des longues lignes.
+                                </List.Item>
+                                <List.Item>
+                                   Liens sociaux option 1 ou 2. Feedbacks?
+                                </List.Item>
+                            </List>
+                        </List.Item>
+                        <List.Item>
+                            <b>Épisodes</b> – Repenser design. J'le hais. À suivre.
+                        </List.Item>
+                        <List.Item>
+                            <b>Collabos, services et qui-sommes nous</b> – Formattage, style, image, etc.  
+                        </List.Item>
+                        <List.Item>
+                            <b>Autre</b>                          
+                            <List spacing="sm" size="md" mt={10}>
+                                <List.Item>
+                                    Pied de page toujours en bas completement.      
+                                </List.Item>
+                                <List.Item>
+                                   Toute vérifier mobile.
+                                </List.Item>
+                                <List.Item>
+                                    PALETTE DE COULEUR POUR GUILLAUME: #137C8B #709CA7 #B8CBD0 #7A90A4 #344D59
+                                </List.Item>
+                            </List>
+                        </List.Item>
+                    </List>
+                </Text>
+            </div>
         </Container>
     );
 }

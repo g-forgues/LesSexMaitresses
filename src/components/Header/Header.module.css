@@ -1,6 +1,5 @@
 .header {
     height: rem(80px);
-    margin-bottom: rem(10px);
     background-color: var(--mantine-color-header-5);
     border-bottom: rem(1px) solid var(--mantine-color-gray-3);
 }
@@ -30,7 +29,9 @@
     text-decoration: none;
 }
 
-
+.image {
+    height: rem(80px);
+}
 
 
 

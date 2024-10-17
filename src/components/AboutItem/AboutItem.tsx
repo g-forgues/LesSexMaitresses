@@ -1,7 +1,7 @@
 import {Avatar, Group, Text, Title} from "@mantine/core";
 import About from "../../dto/About.ts";
 
-function AboutItem({about, imageOnRight = false}: { about: About, imageOnRight?:boolean }) {
+function AboutItem({about, imageOnRight = false, showName = false}: { about: About, imageOnRight?:boolean, showName?:boolean }) {
 
     function getImgUrl(image: string) {
         return new URL(`../../assets/${image}`, import.meta.url).href;
@@ -19,7 +19,7 @@ function AboutItem({about, imageOnRight = false}: { about: About, imageOnRight?:
 
     const textDiv = (
         <div>
-            <Title order={2}>
+            <Title order={2} hidden={!showName}>
                 {about.name}
             </Title>
             <Title order={4}>

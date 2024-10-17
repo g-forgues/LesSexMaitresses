@@ -7,6 +7,7 @@ import EpisodesPage from "./Episodes.tsx";
 import {episodesLoader} from "./EpisodesLoader.tsx";
 import CollaborationsPage from "./Collaborations.tsx";
 import ServicesPage from "./Services.tsx";
+import TestPage from "./Tests.tsx";
 
 export const links = [
     {link: '/a-propos', label: 'Qui sommes-nous?'},
@@ -39,6 +40,10 @@ const routes: RouteObject[] = [
             {
                 path: 'services',
                 element: <ServicesPage />
+            },
+            {
+                path: 'test',
+                element: <TestPage />
             }
         ]
     }]

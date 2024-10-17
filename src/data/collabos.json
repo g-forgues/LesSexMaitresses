@@ -1,0 +1,65 @@
+[  
+  {
+    "name": "Gala1",
+    "title": "Gala-spectacle : Résistances féministes",
+    "primaryDescription": "Le 8 mars 2023, pour la Journée internationale des droits des femmes, les SexMaitresses ont été invitées à enregistrer un épisode devant public à propos de la misogynie intériorisée.",
+    "secondaryDescription": "",
+    "image": "temp.png"
+  },
+  {
+    "name": "Panel1",
+    "title": "Panel pour la Fédération Autonome de l’Enseignement (FAE)",
+    "primaryDescription": "Pour la journée du Réseau des Femmes organisée par la Fédération Autonome de l’Enseignement, les SexMaitresses ont été invitées avec Dre Léa Séguin pour discuter de la misogynie intériorisée et animer une période de discussion sur le sujet.",
+    "secondaryDescription": "",
+    "image": "temp.png"
+  },
+  {
+    "name": "Balado1",
+    "title": "Camille Parle Sexe",
+    "primaryDescription": "Sa grande passion : parler de la masturbation des femmes... Valérie n’a pas pu refuser l’invitation d’une collègue et amie sexologue Camille Bataillon, sur son balado.",
+    "secondaryDescription": "",
+    "image": "temp.png"
+  },
+  {
+    "name": "Balado2",
+    "title": "Connexions CRIPCAS",
+    "primaryDescription": "Sarah est allée discuter de la façon que Les SexMaitresses vulgarisent l’information scientifique dans leur balado... au balado du CRIPCAS",
+    "secondaryDescription": "",
+    "image": "temp.png"
+  },
+  {
+    "name": "Panel2",
+    "title": "Panel de discussions Fable Le Dauphin",
+    "primaryDescription": "Valérie a pris part à un panel de discussions sur l’éducation à la sexualité.",
+    "secondaryDescription": "Les SexMaitresses ont d’ailleurs participé à la révision de la fable et ont rédigé un résumé pour la quatrième de couverture.",
+    "image": "temp.png"
+  },
+  {
+    "name": "Collab1",
+    "title": "Collaboration avec Radio Vacarme",
+    "primaryDescription": "Les SexMaitresses font partie de l’équipe de Radio Vacarme, une radio inclusive en Belgique.",
+    "secondaryDescription": "Grâce à cette collaboration, nous sommes en mesure de pouvoir partager et diffuser nos épisodes en Europe.",
+    "image": "temp.png"
+  },
+  {
+    "name": "Invitation1",
+    "title": "Invitation à la première de Caresses Magiques",
+    "primaryDescription": "C’est une série documentaire (5 courts métrages) de Lori Malépart-Traversy qui dépeint les pratiques masturbatoires de façon humoristique et décomplexée. Nous sommes très fan de tout ce qu’elle entreprend!",
+    "secondaryDescription": "",
+    "image": "temp.png"
+  },
+  {
+    "name": "Vernissage1",
+    "title": "Vernissage de Divine Feminine part Brittany Key Art",
+    "primaryDescription": "Notre amie Brittany nous a invité à sa première exposition solo. Cette artiste célèbre toujours les femmes et leur émancipation.",
+    "secondaryDescription": "Ce fut un plaisir d’être présentes!",
+    "image": "temp.png"
+  }, 
+  {
+    "name": "Vernissage2",
+    "title": "Vernissage de Sexe, Désirs et Data par le centre PHI",
+    "primaryDescription": "Les SexMaitresses ont été invitées au lancement de l’exposition immersive qui explore les liens entre la sexualité et les technologies.",
+    "secondaryDescription": " On a adoré l’expérience! ",
+    "image": "temp.png"
+  }
+]
