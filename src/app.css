@@ -1,5 +1,12 @@
-.main {
+#root {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
     background-color:  var(--mantine-color-header-1);
     padding-top: var(--mantine-spacing-lg);
     padding-bottom: var(--mantine-spacing-lg);
+    flex: 1;
 }

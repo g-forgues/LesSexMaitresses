@@ -4,6 +4,9 @@ import {RouterProvider} from "react-router-dom";
 import router from "./pages/Router.tsx";
 import {Provider} from "react-redux";
 import {store} from "./store";
+import './app.css';
+import '@fontsource/lobster';
+import '@fontsource/merriweather';
 
 function App() {
 
@@ -23,9 +26,10 @@ function App() {
 
     const theme = createTheme({
         colors: {
-            header,
+            header,           
         },
-
+        fontFamily: 'Merriweather, serif',
+        headings: { fontFamily: 'Merriweather, serif' },
     });
 
 

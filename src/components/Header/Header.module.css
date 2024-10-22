@@ -45,7 +45,6 @@
     font-size: var(--mantine-font-size-xl);
     font-weight: 500;
 
-
     @mixin hover
     {
         background-color: var(--mantine-color-header-1);
@@ -53,7 +52,7 @@
     }
 }
 
-link.active {
+.active {
     background-color: var(--mantine-color-header-1);
     color: var(--mantine-color-header-6);
 }

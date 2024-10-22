@@ -4,19 +4,27 @@ import classes from './Header.module.css';
 import {Link, NavLink} from "react-router-dom";
 import {links} from "../../pages/Router.tsx";
 import image from '../../assets/header.png';
+import { useState } from 'react';
 
 
 
 export function Header() {
     const [opened, {toggle}] = useDisclosure(false);
+    const [active, setActive] = useState<Number>(0);
+
+    const handleClick = (index: Number) => {
+        console.log(index);
+        setActive(index);
+        opened ? toggle : undefined;
+    }
 
     const linksComponent = (
-        links.map((link) => (
+        links.map((link, index) => (
             <NavLink
                 to={link.link}
                 key={link.label}
-                className={classes.link}
-                onClick={opened ? toggle : undefined}
+                className={`${classes.link} ${index === active ? classes.active : undefined}`}
+                onClick={()=> handleClick(index)}
             >
                 {link.label}
             </NavLink>

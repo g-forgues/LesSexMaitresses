@@ -57,30 +57,10 @@ export function HeroBullets() {
             <Button variant="outline" size="md" className={classes.icons} onClick={() => openTab("APPLE")}>
               <IconBrandApplePodcast stroke={2} style={{ width: rem(38), height: rem(38) }} />
             </Button>
-          </Group>
-          <Text mt="sm" size="md" className={classes.subtitle}><b>Option 2</b></Text>
-
-          <Group mt={10}>
-            <Button variant="outline" size="md" className={classes.icons} onClick={() => openTab("IG")}>
-              <FontAwesomeIcon icon={faInstagram} size="2xl" /> 
-              <Text ml="sm" size="md"><b>Instagram</b></Text>
-            </Button>
-            <Button variant="outline" size="md" className={classes.icons} onClick={() => openTab("FB")}>
-              <FontAwesomeIcon icon={faSquareFacebook} size="2xl" className={classes.icons} />
-              <Text ml="sm" size="md"><b>Facebook</b></Text>
-
-            </Button>
-            <Button variant="outline" size="md" className={classes.icons} onClick={() => openTab("SPOTIFY")}>
-            <FontAwesomeIcon icon={faSpotify} size="2xl" />
-            <Text ml="sm" size="md"><b>Spotify</b></Text>
-
-            </Button>
             <Button variant="outline" size="md" className={classes.icons} onClick={() => openTab("APPLE")}>
               <IconBrandApplePodcast stroke={2} style={{ width: rem(38), height: rem(38) }} />
-              <Text ml="sm" size="md"><b>Apple Podcast</b></Text>
-
             </Button>
-          </Group>
+          </Group>         
         </div>
       </div>
     </Container>

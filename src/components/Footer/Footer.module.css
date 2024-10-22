@@ -1,11 +1,14 @@
 .footer {
     border-top: rem(1px) solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
     background-color:  var(--mantine-color-header-2);
-
 }
 
-.inner {
-    
+.footer > div > p {
+    font-family: 'Lobster', system-ui;
+    letter-spacing: rem(2px);    
+}
+
+.inner {    
     display: flex;
     justify-content: space-between;
     align-items: center;

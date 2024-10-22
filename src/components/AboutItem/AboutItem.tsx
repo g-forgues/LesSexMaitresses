@@ -1,4 +1,4 @@
-import {Avatar, Group, Text, Title} from "@mantine/core";
+import {Avatar, Container, Group, Text, Title} from "@mantine/core";
 import About from "../../dto/About.ts";
 
 function AboutItem({about, imageOnRight = false, showName = false}: { about: About, imageOnRight?:boolean, showName?:boolean }) {
@@ -11,15 +11,24 @@ function AboutItem({about, imageOnRight = false, showName = false}: { about: Abo
         <div>
             <Avatar
                 src={getImgUrl(about.image)}
-                size={94}
+                size={300}
                 radius="md"
             />
         </div>
     );
 
+    let fontTest;
+    if (about.name === "Valérie"){
+        fontTest = "spectral";
+    } else if (about.name ==="Audrey") {
+        fontTest = "playfair";
+    } else if (about.name==="Sarah") {
+        fontTest = "merryweather";
+    }
+
     const textDiv = (
-        <div>
-            <Title order={2} hidden={!showName}>
+        <div className={fontTest}>
+            <Title order={2} hidden={!showName} my="xs">
                 {about.name}
             </Title>
             <Title order={4}>
@@ -35,12 +44,12 @@ function AboutItem({about, imageOnRight = false, showName = false}: { about: Abo
     );
 
     return (
-        <div>
+        <Container>
             <Group wrap="nowrap">
                 {imageOnRight ? [imageDiv, textDiv]: [textDiv, imageDiv]}
 
             </Group>
-        </div>
+        </Container>
     );
 }
 
